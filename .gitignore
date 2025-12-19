@@ -1,0 +1,74 @@
+########################
+# Build results
+########################
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+########################
+# Visual Studio
+########################
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+########################
+# Rider / VS Code
+########################
+.idea/
+.vscode/
+
+########################
+# .NET Core
+########################
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+########################
+# Logs
+########################
+*.log
+
+########################
+# OS files
+########################
+.DS_Store
+Thumbs.db
+
+########################
+# Test results
+########################
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+########################
+# Publish
+########################
+publish/
+app.publish/
+
+########################
+# NuGet
+########################
+*.nupkg
+*.snupkg
+.nuget/packages/
+
+########################
+# Secrets & configs
+########################
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+########################
+# Environment files
+########################
+.env
+.env.*

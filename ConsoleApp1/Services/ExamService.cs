@@ -1,13 +1,27 @@
-﻿using ConsoleApp1.Interfaces;
+﻿using ConsoleApp1.Dtos;
+using ConsoleApp1.Interfaces;
 using ConsoleApp1.Models;
 
 namespace ConsoleApp1.Services
 {
     public class ExamService : IExamService
     {
-        public void InsertExam()
+        public int InsertExam(ExamDto exam)
         {
-            Console.WriteLine("Main");
+            throw new NotImplementedException();
+        }
+
+        public int InsertExamQuestions(ExamQuestionsDto examDto)
+        {
+            foreach(var question in examDto.Questions)
+            {
+                if(question is MultipleChoiceQuestionModel)
+                {
+
+                }
+            }
+
+            return 1;
         }
     }
 }

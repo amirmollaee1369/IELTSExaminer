@@ -11,6 +11,6 @@ namespace ConsoleApp1.Models
         public DateTime ValidUntilDate { get; set; }
         public TimeOnly LimitTime { get; set; }
 
-        public List<QuestionModel> Questions { get; set; }
+        public List<BaseQuestionModel> Questions { get; set; }
     }
 }

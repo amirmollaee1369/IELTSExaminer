@@ -1,7 +1,9 @@
-﻿namespace ConsoleApp1.Interfaces
+﻿using ConsoleApp1.Dtos;
+
+namespace ConsoleApp1.Interfaces
 {
     public interface IExamService
     {
-        void InsertExam();
+        int InsertExam(ExamDto exam);
     }
 }

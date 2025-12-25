@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace IELTSExaminer.Domain
-{
-    internal class _Imports
-    {
-    }
-}
+﻿global using IELTSExaminer.Domain.Common;
+global using IELTSExaminer.Domain.Entities;
+global using IELTSExaminer.Domain.Enums;
+global using IELTSExaminer.Domain.Events;

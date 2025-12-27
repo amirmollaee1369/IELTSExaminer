@@ -2,10 +2,10 @@
 
 public class ExamDeletedEvent : DomainEvent
 {
-    public ExamDeletedEvent(ExamModel item)
+    public ExamDeletedEvent(Exam item)
     {
         Item = item;
     }
 
-    public ExamModel Item { get; }
+    public Exam Item { get; }
 }

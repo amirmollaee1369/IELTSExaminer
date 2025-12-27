@@ -2,10 +2,10 @@
 
 public class ExamCreatedEvent : DomainEvent
 {
-    public ExamCreatedEvent(ExamModel item)
+    public ExamCreatedEvent(Exam item)
     {
         Item = item;
     }
 
-    public ExamModel Item { get; }
+    public Exam Item { get; }
 }

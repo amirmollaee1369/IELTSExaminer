@@ -2,7 +2,7 @@
 using IELTSExaminer.Application.Common.Interfaces;
 using MediatR;
 
-namespace IELTSExaminer.Application.Features.Exam.Commands.UpdateExam;
+namespace IELTSExaminer.Application.Features.ExamFeature.Commands.UpdateExam;
 
 public class UpdateExamCommand : IRequest
 {
@@ -24,7 +24,7 @@ public class UpdateTodoItemCommandHandler : IRequestHandler<UpdateExamCommand>
 
     public async Task<Unit> Handle(UpdateExamCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _context.ExamModels
+        var entity = await _context.Exams
             .FindAsync(new object[] { request.Id }, cancellationToken);
 
         if (entity == null)

@@ -1,6 +1,6 @@
 ﻿namespace IELTSExaminer.Domain.Entities;
 
-public class StudentExamAsnwersModel : BaseModel
+public class StudentExamAsnwer : BaseModel
 {
     
 }

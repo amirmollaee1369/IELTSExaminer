@@ -5,7 +5,7 @@ namespace IELTSExaminer.Application.Common.Interfaces;
 
 public interface IApplicationDbContext
 {
-    DbSet<ExamModel> ExamModels { get; }
+    DbSet<Exam> Exams { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

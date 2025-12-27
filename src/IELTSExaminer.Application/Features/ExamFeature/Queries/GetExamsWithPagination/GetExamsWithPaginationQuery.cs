@@ -3,9 +3,10 @@ using AutoMapper.QueryableExtensions;
 using CleanArchitecture.Application.Common.Mappings;
 using CleanArchitecture.Application.Common.Models;
 using IELTSExaminer.Application.Common.Interfaces;
+using IELTSExaminer.Application.Features.ExamFeature.Queries.GetExamsWithPagination;
 using MediatR;
 
-namespace IELTSExaminer.Application.Features.Exam.Queries.GetExamsWithPagination;
+namespace IELTSExaminer.Application.Features.ExamFeature.Queries.GetExamsWithPagination;
 
 public class GetExamsWithPaginationQuery : IRequest<PaginatedList<ExamBriefDto>>
 {
@@ -27,8 +28,8 @@ public class GetTodoItemsWithPaginationQueryHandler : IRequestHandler<GetExamsWi
 
     public async Task<PaginatedList<ExamBriefDto>> Handle(GetExamsWithPaginationQuery request, CancellationToken cancellationToken)
     {
-        return await _context.ExamModels
-            .Where(x => x.ListId == request.ListId)
+        return await _context.Exams
+            .Where(x => x. == request.ListId)
             .OrderBy(x => x.Title)
             .ProjectTo<ExamBriefDto>(_mapper.ConfigurationProvider)
             .PaginatedListAsync(request.PageNumber, request.PageSize);

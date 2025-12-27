@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace IELTSExaminer.Application.Features.Exam.Commands.CreateExam;
+namespace IELTSExaminer.Application.Features.ExamFeature.Commands.CreateExam;
 
 public class CreateExamCommandValidator : AbstractValidator<CreateExamCommand>
 {

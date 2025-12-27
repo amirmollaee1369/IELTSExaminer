@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace IELTSExaminer.Application.Features.Exam.Commands.UpdateExam;
+namespace IELTSExaminer.Application.Features.ExamFeature.Commands.UpdateExam;
 
 public class UpdateExamCommandValidator : AbstractValidator<UpdateExamCommand>
 {

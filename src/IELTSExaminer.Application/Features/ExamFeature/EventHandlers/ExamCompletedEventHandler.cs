@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace IELTSExaminer.Application.Features.Exam.EventHandlers;
+namespace IELTSExaminer.Application.Features.ExamFeature.EventHandlers;
 
 public class ExamCompletedEventHandler : INotificationHandler<DomainEventNotification<ExamCompletedEvent>>
 {

@@ -1,8 +1,9 @@
 ﻿using IELTSExaminer.Application.Common.Interfaces;
 using IELTSExaminer.Domain.Entities;
+using IELTSExaminer.Domain.Events;
 using MediatR;
 
-namespace IELTSExaminer.Application.Features.Exam.Commands.CreateExam;
+namespace IELTSExaminer.Application.Features.ExamFeature.Commands.CreateExam;
 
 public class CreateExamCommand : IRequest<int>
 {
@@ -22,14 +23,14 @@ public class CreateTodoItemCommandHandler : IRequestHandler<CreateExamCommand, i
 
     public async Task<int> Handle(CreateExamCommand request, CancellationToken cancellationToken)
     {
-        var entity = new ExamModel
+        var entity = new Domain.Entities.Exam
         {
            
         };
 
-        entity.DomainEvents.Add(new ExamModelCreatedEvent(entity));
+        entity.DomainEvents.Add(new ExamCreatedEvent(entity));
 
-        _context.ExamModels.Add(entity);
+        _context.Exams.Add(entity);
 
         await _context.SaveChangesAsync(cancellationToken);
 

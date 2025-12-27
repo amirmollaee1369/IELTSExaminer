@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace IELTSExaminer.Application.Features.Exam.Queries.GetExamsWithPagination;
+namespace IELTSExaminer.Application.Features.ExamFeature.Queries.GetExamsWithPagination;
 
 public class GetExamsWithPaginationQueryValidator : AbstractValidator<GetExamsWithPaginationQuery>
 {
